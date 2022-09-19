@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script src="../JavaScript/script.js"></script>
+    
+    
+</head>
+<body>
+    <!------------Navigation------------->
+    <section class="navbarSticky">
+        <nav>
+            <a href=""><h2 class="logo">RS.</h2></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#helloWorld">About Me</a></li>
+                <li><a href="#portfolio">Websites</a></li>
+                <li><a href="#contactMe" class="contactButton">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        
+        <!--Menu (Mobile devices)-->
+        <div class="menuBar">
+            <img src="../Media/menu.png" alt="">
+        </div>
+    </section>
+
+    <!--Home-->
+    <section id="home">
+        <div class="myHome">
+            <h1 class="welcome">Welcome to <br> my portfolio</h1>
+            <h2>"The first step is to establish that something is possible; then probability will occur."</h2>
+            <p>- Elon Musk</p>
+        </div>
+        <!--Scroll down section-->
+            <div class="scrollDown">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <span class="text">Scroll down</span>
+              </div>
+    </section>
+
+
+
+    <!--About Me-->
+    <section id="helloWorld">
+        <div class="showcase">
+            <h1 class="about">About Me</h1>
+            <ul>
+                <li><h1>Hello World</h1>
+                    <h3>My name is <span class="name">Jr Sanchez</span></h3>
+                    <p>I'm a Computer Information System graduate in East Central College.
+                    I am a web designer/developer, a freelance computer technician and artist. I love video games, basketball, hiking(sometimes) and coffee, got to have that hot cup of joe in the morning.</p> 
+                    <br>
+                    <p>Why did I choose the <span class="name">tech side?</span> </p>
+                    <br>
+                    <p>I have been playing and fiddling with computers since I was in 6th Grade, I love how technology evolves so fast that you won't be able to keep up with the news if you don't read about them everyday. We live in a world full of technology and I might as well work with it and make everyday life easier</p>
+                </li>
+
+                    
+                <li><img src="../Media/ProfilePic.jpg" alt="" draggable="false"></li>
+            </ul>
+        </div>
+    </section>
+    <!--Portfolio-->
+
+    <section id="portfolio">
+            <div class="myWebsites">
+                <h1 class="draft">My drafts</h1>
+                <div class="row"> 
+                    <div class="column">
+                        <a href="https://codepen.io/jr-sanchez/pen/MWpjJYq" target="_blank" draggable="false"><img src="../Media/RealEstate.PNG" alt="" draggable="false"></a>
+                        <a href="https://codepen.io/jr-sanchez/pen/xxqEgEK" target="_blank" draggable="false"><img src="../Media/myOwn.PNG" alt="" draggable="false"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://codepen.io/jr-sanchez/pen/MWpjJYq" target="_blank" draggable="false"><img src="../Media/TeeCafe.PNG" alt="" draggable="false"></a>
+                        <a href="https://codepen.io/jr-sanchez/pen/MWpjJYq" target="_blank" draggable="false"><img src="../Media/doppies.PNG" alt="" draggable="false"></a>
+                    </div>
+                    
+                    
+                </div>
+        </div>    
+    </section>
+    <!--Contact ME-->
+    <section id="contactMe">
+            <div class="container">
+                <div class="formDiv">
+                    <h3>Contact me</h3>
+                    <h4>I will be in contact with you as soon as possible.</h4>
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                          <textarea placeholder="Type your Message Here...." tabindex="4" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                </div>
+                  </form>
+
+                  <p>- OR -</p>
+            
+                  <!--Social Media-->
+                  <div class="socialMedia">
+                        <a href="https://www.facebook.com/jay.our17" draggable="false" target="_blank">                            
+                            <img src="../Media/Facebook.png" alt="" draggable="false">
+                            <p>Facebook</p>
+                        </a>
+                        <a href="https://www.instagram.com/jay_our/" draggable="false" target="_blank">
+                            <img src="../Media/Instagram.png" alt="" draggable="false">
+                            <p>Instagram</p>
+                        </a>
+                        <a href="http://www.Twitter.com" draggable="false" target="_blank">
+                            <img src="../Media/Twitter.png" alt="" draggable="false">
+                            <p>Twitter</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rodolfo-sanchez96/" draggable="false" target="_blank">
+                            <img src="../Media/linkedIN.png" alt="" draggable="false">
+                            <p>LinkedIn</p>
+                        </a>
+                        <a href="https://codepen.io/jr-sanchez" draggable="false" target="_blank">
+                            <img src="../Media/codePen.png" alt="" draggable="false">
+                            <p>CodePen</p>
+                        </a>
+                  </div>
+            </div>
+    </section>
+
+    <!--smooth scroll-->
+    <script src="../JavaScript/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>

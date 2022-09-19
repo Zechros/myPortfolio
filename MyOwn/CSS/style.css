@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========= Fonts ============*/
+@font-face {
+    font-family: RobotoMed;
+    src: url(../Fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url(../Fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url(../Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+/* =============================*/
+
+/* ========== NAVIGATION ===========*/
+
+.logo{
+    border-radius: 20px;
+    padding: 10px;
+    font-family: RobotoBold;
+    color: #fff5f1;
+    font-size: 26px;
+    border: 0 #333 solid;
+    background-color: rgba(51, 51, 51, 0.199);
+}
+
+.logo:hover{
+    animation: borderAnimation 0.5s ease-out;
+    cursor: pointer;
+}
+
+        /*-------- Logo animation --------*/
+        @keyframes borderAnimation{
+            0%{
+              transform: scale(1);
+              background-color: rgb(128, 128, 128);}
+            25%{
+              transform: scale(1.1);
+            }
+            50%{
+              transform: scale(1.2);
+            }
+            75%{
+              transform: scale(1.1);
+            }
+            100%{
+              transform: scale(1);
+            }
+        }
+        /*---------------------------------*/
+
+.navbarSticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbarSticky a{
+  text-decoration: none;
+}
+nav{
+    font-family: RobotoMed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(255, 245, 241);
+    transition: 0.5s;
+}
+.nav-links a:hover{
+    color: #ffa077;
+}
+
+.nav-links .contactButton{
+    color: #fc6f32;
+}
+        /* Contact animation */
+        .nav-links .contactButton:after{
+            content: '';
+            display: flex;
+            width: 100%;
+            border: 1px solid;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+        }
+        .nav-links .contactButton:hover:after{
+            opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+}
+
+.menuBar{
+    display: none;
+}
+
+    /* Nav-Mobile Compatibility */
+    @media(max-width:1366px){
+    .nav-links{
+        width: 40%;
+    }
+    }
+    @media(max-width:812px){
+    }
+    /* -----------------------*/
+
+/* =================================*/
+
+/* ============= BODY ==============*/
+
+body{
+    width: 100%;
+    height: 150%;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;  
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/*======================================*/
+
+/*---Sections---*/
+
+  /*---Home---*/
+    .myHome{
+      color: #fff5f1;   
+      background-image: url("../Media/lamp.jpg");
+      background-size: cover;
+      background-position: center;
+      display: table;
+      width: 100%;
+      background-attachment: fixed;
+    }
+    .myHome h2{
+      justify-content: center;
+      text-align: center;
+    }
+    .myHome p{
+      justify-content: center;
+      text-align: center;
+      padding: 1% 0 22% 0;
+    }
+    .welcome{
+      font-family: RobotoBold;
+      font-size: 48px;
+      justify-content: center;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 10% 0;
+      padding: 5% 0;
+    }
+  /*==========*/
+
+
+  /*---About Me----*/
+    
+    #helloWorld{
+      background-image: url("../Media/desk.jpg");
+      background-size: cover;
+      background-position: center;
+      display: table;
+      background-attachment: fixed;
+    }
+
+    #helloWorld img{
+      width: 30vh;
+      border: 0px #0c0c0c49 solid;
+      transition: 0.3s;
+      padding: 36px;
+    }
+    #helloWorld img:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    .about{
+      font-family: RobotoMed;
+      font-size: 48px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 10% 0;
+    }
+    .showcase{
+        font-family: RobotoLight;
+        color: #fff5f1;
+        padding: 10% 22%;
+        background-color: rgba(31, 15, 15, 0.747);
+    }
+    .showcase ul{
+      display: flex;
+    }
+
+    .showcase ul li h1,h3{
+      padding-bottom: 12px;
+    }
+    .showcase ul li h3{
+      padding-bottom: 48px;
+    }
+    .showcase ul li{
+      list-style: none;
+    }
+
+    .showcase ul li p{
+      font-size: 16px;
+      font-family: RobotoMed;
+    }
+
+    .showcase .name{
+        color: #ffa077;
+    }
+
+    .showcase h1{
+        padding-bottom: 5px;
+    }
+
+    .showcase h3{
+        padding-bottom: 10px;
+    }
+
+    .showcase h1{
+        padding-bottom: 5px;
+    }
+  /*===================*/
+
+
+/*---Portfolio----*/
+ #portfolio{
+  background-image: url("../Media/bottom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: table;
+}
+.myWebsites{
+  color: #fff5f1;
+  background-color: rgba(44, 21, 21, 0.801);
+  padding: 5% 22%;
+}
+
+.row img{
+  width: 100%;
+  transition: 0.3s;
+}
+.row {
+  flex-wrap: wrap;
+  padding: 2px 6px;
+}
+
+.column {
+  flex: 50%;
+  padding: 2px 6px;
+  display: flex;
+}
+
+.column a{
+  padding: 0 5px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  padding: 0 6px;
+  height: 360px;
+}
+
+.row img:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.draft{
+  font-family: RobotoBold;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10% 0;
+}
+/*================*/
+
+/*------------------ Contact Me ---------------------- */
+
+#contactMe{
+  background-image: url(../Media/contactMe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: table;
+  width: 100%;
+}
+
+.container {
+  background-color: rgba(44, 21, 21, 0.8);
+  padding: 5% 22%;
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+.formDiv{
+  max-width:720px;
+  padding: 5% 22%;
+}
+#contact {
+	padding:5%;
+  position: relative;
+  margin: 5% 0;
+}
+
+.container .formDiv h3 {
+	color: #fff5f1;
+	display: block;
+  font-family: RobotoMed;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 5% 0 0 5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.container .formDiv h4 {
+	font-size:16px;
+  color:#fff5f1;
+  font-family: RobotoLight;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.container p {
+	color: #fff5f1;
+	display: block;
+  font-family: RobotoMed;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+
+fieldset {
+	border: medium none;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:rgba(255, 255, 255, 0.87);
+	margin:0 0 5px; 
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:25%;
+	border:none;
+	background:#eb926c;
+	color:#FFF;
+	padding:10px;
+	font-size:15px;
+  transition: 0.3s;
+}
+
+#contact button[type="submit"]:hover {
+	background:#ffa077;
+  transform: scale(0.95);
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+::-webkit-input-placeholder {
+ color:gray;
+}
+:-moz-placeholder {
+ color:gray;
+}
+::-moz-placeholder {
+ color:gray;
+}
+:-ms-input-placeholder {
+ color:gray;
+}
+
+  /*--Social Media--*/
+  .socialMedia{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+  }
+
+  .socialMedia img{    
+    transition: 0.3s;
+  }
+
+  .socialMedia img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .socialMedia p{
+    font-size: 12px;
+    font-family: RobotoLight;
+  }
+  .socialMedia a{
+    text-decoration: none;
+  }
+
+  /*----------------*/
+
+
+/* =================================*/
+
+        /*----Scroll down animation*/
+
+        .scrollDown {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          justify-content: center;
+          align-items: center;
+          right: 50%;
+          top: 20%;
+        }
+        .chevron {
+          position: absolute;
+          width: 28px;
+          height: 8px;
+          opacity: 0;
+          transform: scale3d(0.5, 0.5, 0.5);
+          animation: move 3s ease-out infinite;
+        }
+        
+        .chevron:first-child {
+          animation: move 3s ease-out 1s infinite;
+        }
+        
+        .chevron:nth-child(2) {
+          animation: move 3s ease-out 2s infinite;
+        }
+        
+        .chevron:before,
+        .chevron:after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 51%;
+          background: #fff;
+        }
+        
+        .chevron:before {
+          left: 0;
+          transform: skew(0deg, 30deg);
+        }
+        
+        .chevron:after {
+          right: 0;
+          width: 50%;
+          transform: skew(0deg, -30deg);
+        }
+        
+        @keyframes move {
+          25% {
+            opacity: 1;
+        
+          }
+          33% {
+            opacity: 1;
+            transform: translateY(30px);
+          }
+          67% {
+            opacity: 1;
+            transform: translateY(40px);
+          }
+          100% {
+            opacity: 0;
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+          }
+        }
+        
+        .text {
+          display: block;
+          margin-top: 75px;
+          margin-left: -30px;
+          font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+          font-size: 12px;
+          color: #fff;
+          text-transform: uppercase;
+          white-space: nowrap;
+          opacity: .25;
+          animation: pulse 2s linear alternate infinite;
+        }
+        
+        @keyframes pulse {
+          to {
+            opacity: 1;
+          }
+        }
+        /*=================================================================*/
