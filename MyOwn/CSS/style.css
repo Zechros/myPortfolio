@@ -58,8 +58,9 @@
 
 .navbarSticky{
   position: fixed;
+  background-color: #171717;
+  padding: 10px;
   width: 100%;
-  top: 0;
 }
 
 .navbarSticky a{
@@ -69,15 +70,16 @@ nav{
     font-family: RobotoMed;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 25px;
+    max-width: 100%;
 }
 .nav-links{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 25%;
     list-style: none;
+}
+
+.nav-links li{
+  padding: 20px 50px;
 }
 .nav-links a{
     text-decoration: none;
@@ -128,7 +130,7 @@ nav{
 /* ============= BODY ==============*/
 
 body{
-    width: 100%;
+    max-width: 100%;
     height: 150%;
     position: relative;
     justify-content: space-around;
