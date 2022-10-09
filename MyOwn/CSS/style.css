@@ -188,13 +188,14 @@ body{
       background-position: center;
       display: table;
       background-attachment: fixed;
+      max-width: 100%;
     }
 
     #helloWorld img{
-      width: 30vh;
       border: 0px #0c0c0c49 solid;
       transition: 0.3s;
       padding: 36px;
+      max-width: 100%;
     }
     #helloWorld img:hover{
         transform: scale(1.02);
